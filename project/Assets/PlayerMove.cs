@@ -13,11 +13,11 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            Rigidbody.AddRelativeForce(-Vector3.forward * Speed, ForceMode.VelocityChange);
+            Rigidbody.AddRelativeTorque(-Vector3.forward * Speed, ForceMode.VelocityChange);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            Rigidbody.AddRelativeForce(Vector3.forward * Speed, ForceMode.VelocityChange);
+            Rigidbody.AddRelativeTorque(Vector3.forward * Speed, ForceMode.VelocityChange);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
